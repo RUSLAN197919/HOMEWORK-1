@@ -29,7 +29,12 @@ class ViewController: UIViewController {
 
 
     @IBAction func ButtonactionUI(_ sender: Any) {
-        count+=1
+        
+        if count == count {
+            count+=1}
+        else {
+            print("nil")
+        }
         print(count)
         labelUI.text = "Значение счётчика:  " + String(count)
         
