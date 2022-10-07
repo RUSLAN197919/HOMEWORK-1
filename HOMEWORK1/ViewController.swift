@@ -11,32 +11,31 @@ class ViewController: UIViewController {
     
     var count: Int = 0
 
-    @IBOutlet weak var labelUI: UILabel!
+    @IBOutlet weak var counterLabel: UILabel!
     
-    @IBOutlet weak var ButtonUI: UIButton!
+    @IBOutlet weak var buttoncounter: UIButton!
     
     
     override func viewDidLoad() {
         
         
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        labelUI.text = "Значение счётчика:  " + String(count)
-        ButtonUI.tintColor = .green
+        counterLabel.text = "Значение счётчика:  " + String(count)
+        
+        buttoncounter.tintColor = .green
        
     }
 
 
-    @IBAction func ButtonactionUI(_ sender: Any) {
+    @IBAction func incrementCounterClicked(_ sender: Any) {
         
-        if count == count {
-            count+=1}
-        else {
-            print("nil")
-        }
+        
+            count+=1
+        
         print(count)
-        labelUI.text = "Значение счётчика:  " + String(count)
+        
+        counterLabel.text = "Значение счётчика:  " + String(count)
         
         
     }

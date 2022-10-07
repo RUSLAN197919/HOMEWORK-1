@@ -31,7 +31,7 @@
                                     <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="ButtonactionUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SsV-1j-nXd"/>
+                                    <action selector="incrementCounterClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpG-Nd-Jtr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,8 +39,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="ButtonUI" destination="ac5-eW-KWE" id="nSZ-6c-e21"/>
-                        <outlet property="labelUI" destination="qsb-uo-pDT" id="a3P-de-t0R"/>
+                        <outlet property="buttoncounter" destination="ac5-eW-KWE" id="Nhm-e4-PhT"/>
+                        <outlet property="counterLabel" destination="qsb-uo-pDT" id="da0-PE-Yph"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
