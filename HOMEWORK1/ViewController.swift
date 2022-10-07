@@ -15,13 +15,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttoncounter: UIButton!
     
+    func textcounterLabel() {
+        
+        
+        
+        counterLabel.text = "Значение счетчка  " + String(count)
+        
+      
+    }
+    
     
     override func viewDidLoad() {
         
         
         super.viewDidLoad()
         
-        counterLabel.text = "Значение счётчика:  " + String(count)
+       textcounterLabel()
+        
         
         buttoncounter.tintColor = .green
        
@@ -35,7 +45,9 @@ class ViewController: UIViewController {
         
         print(count)
         
-        counterLabel.text = "Значение счётчика:  " + String(count)
+        textcounterLabel()
+        
+       
         
         
     }
